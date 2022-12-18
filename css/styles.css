@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.banner {
+  background-image: url(https://images.unsplash.com/photo-1647089490798-573b8b47ad9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80);
+  width: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color:azure;
+  background-color: rgba(0, 0, 0, 50%);
+  font-family: "Rubik", sans-serif;
+  letter-spacing: .3em;
+}
+
+.banner p {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  color: aliceblue;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+}
+
+.banner a {
+  color: aliceblue;
+}
+
+.logo {
+  width: 70px;
+  float: left;
+  height: auto;
+  margin-right: 1rem;
+}
+
+
