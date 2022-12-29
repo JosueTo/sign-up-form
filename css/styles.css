@@ -148,11 +148,38 @@
 
   .form-header{
     /* width: auto; */
-    padding: 6rem 6rem 2rem 2rem;
+    padding: 0 6rem 2rem 2rem;
     text-align: left;
     font-size: 1.3rem;
     font-family: "Inter Tight", sans-serif;
   }
+
+  .form-header > p {
+    margin: 0;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 3rem;
+  }
+
+  .form-title {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .form-row{
+    width: max(250px, 40%);
+    display: inline;
+  }
+
+  /* .form-row > input {
+    width: min(250px, 40%);
+  } */
 
 }
 
