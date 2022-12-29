@@ -8,7 +8,9 @@
     <title>Sign-Up Form</title>
   </head>
   <body>
+    <!-- container -->
     <div class="container">
+      <!-- banner -->
       <div class="banner">
         <div class="banner-title">
           <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" class="logo" alt="The Odin Project Logo">
@@ -16,7 +18,9 @@
         </div>
         <p>Photo by <a href="https://unsplash.com/@bykurt" target="_blank">ONAR KURT</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
       </div>
-      <main>
+
+      <main class="form-container">
+        <!-- form header -->
         <header class="form-header">
           <p>
             This is not a real online service! You know you need something like this in your life
@@ -25,8 +29,33 @@
           <p>Sign up <em>now</em> to get started.</p><br>
           <p>You <em>know</em> you want to.</p>
         </header>
-        <form action="">
-
+        <!-- form body-->
+        <form action="" class="signup-form">
+          <p class="form-title">Let's do this!</p>
+          <div class="form-row">
+            <label for="name">FIRST NAME</label>
+            <input type="text" name="user-name" id="name">
+          </div>
+          <div class="form-row">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="user-last-name" id="last-name">
+          </div>
+          <div class="form-row">
+            <label for="email">EMAIL</label>
+            <input type="email" name="user-email" id="email">
+          </div>
+          <div class="form-row">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="user-phone" id="phone">
+          </div>
+          <div class="form-row">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="user-password" id="password">
+          </div>
+          <div class="form-row">
+            <label for="check-password">FIRST NAME</label>
+            <input type="password" name="check-password" id="check-password">
+          </div>
         </form>
       </main>
     </div>
