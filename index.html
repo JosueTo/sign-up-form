@@ -30,33 +30,38 @@
           <p>You <em>know</em> you want to.</p>
         </header>
         <!-- form body-->
-        <form action="" class="signup-form">
+        <form action="" class="signup-form" id="signup-form">
           <p class="form-title">Let's do this!</p>
-          <div class="form-row">
-            <label for="name">FIRST NAME</label>
-            <input type="text" name="user-name" id="name">
+          <div class="form-row" id="name-row">
+            <label for="name" class="required">FIRST NAME</label>
+            <input type="text" name="user-name" id="name" placeholder="John" required>
           </div>
           <div class="form-row">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="user-last-name" id="last-name">
+            <label for="last-name" class="required">LAST NAME</label>
+            <input type="text" name="user-last-name" id="last-name" placeholder="Doe" required>
           </div>
           <div class="form-row">
-            <label for="email">EMAIL</label>
-            <input type="email" name="user-email" id="email">
+            <label for="email" class="required">EMAIL</label>
+            <input type="email" name="user-email" id="email" placeholder="email@example.com" required>
           </div>
           <div class="form-row">
             <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="user-phone" id="phone">
+            <input type="tel" name="user-phone" id="phone" maxlength="10" placeholder="618 177 12 12">
           </div>
           <div class="form-row">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="user-password" id="password">
+            <label for="password" class="required">PASSWORD</label>
+            <input type="password" name="user-password" id="password" minlength="6" placeholder="At least 6 characters" required>
           </div>
           <div class="form-row">
-            <label for="check-password">FIRST NAME</label>
-            <input type="password" name="check-password" id="check-password">
+            <label for="confirm-password" class="required">CONFIRM PASSWORD</label>
+            <input type="password" name="check-password" id="confirm-password" required>
+            <p id="alert-password"></p>
           </div>
         </form>
+        <div class="create-account">
+          <button type="submit" form="signup-form" class="btn-create" id="btn-create">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
       </main>
     </div>
   </body>
